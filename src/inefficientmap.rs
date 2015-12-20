@@ -231,7 +231,7 @@ fn random_id(hash_size : usize) -> NodeID {
 fn initpeer() -> Arc<PeerTest> {
   let id = random_id(HASH_SIZE);
 //    let sid = to_str_radix(id,10);
-  Arc::new(PeerTest{nodeid:id, address: LocalAdd(0)})
+  Arc::new(PeerTest{nodeid:id, address: LocalAdd(0), keyshift: 1})
 }
 
 
